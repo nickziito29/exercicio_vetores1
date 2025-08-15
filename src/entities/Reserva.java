@@ -2,17 +2,24 @@ package entities;
 
 public class Reserva {
 
-    public String []name;
-    public String []email;
-    public int []quarto;
 
-    public void Aluguel(int soma, String name, String email, int quarto){
-        int i = soma;
-        this.name[i] = name;
-        this.email[i] = email;
-        this.quarto[i] = quarto;
+    private String name;
+    private String email;
+
+
+    public Reserva(String name, String email) {
+        this.name = name;
+        this.email = email;
     }
 
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 
 
 }
